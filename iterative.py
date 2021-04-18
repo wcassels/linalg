@@ -1,7 +1,6 @@
 import numpy as np
 from lup_funcs import LUP_inplace, solve_from_LUP, solve_LUP
 from hh_funcs import householder, householer_qr
-import time
 
 
 def pow_it(A, x0, tol, maxit, store_iterations = False):
@@ -200,16 +199,3 @@ def pure_QR(A, maxit, tol=1e-8, in_place=True, return_iterations=False, terminat
             return A, iterations
         else:
             return A
-
-
-def time_QR(m, in_place, maxit=10000, tol=1e-6):
-    """
-    Function to time pure_QR performance using specified method.
-    """
-    np.random.seed(1337)
-    A = np.random.randn(m, m) + 1j*np.random.randn(m, m)
-
-    t1 = time.time()
-    pure_QR(A, maxit, tol, in_place=in_place)
-    t2 = time.time()
-    return t2-t1
