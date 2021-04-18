@@ -1,5 +1,4 @@
 import numpy as np
-import numpy.random as random
 from hh_funcs import householder_ls
 from lu_funcs import solve_U
 
