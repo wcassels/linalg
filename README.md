@@ -1,6 +1,6 @@
 # linalg
 
-Various linear algebra methods implemented in Python. Written as part of the computational linear algebra module at Imperial College London.
+Various linear algebra procedures implemented in Python. Written as part of the computational linear algebra module at Imperial College London.
 
 Contents:
 - elementary_linalg.py : Basic matrix/vector multiplication
